@@ -50,6 +50,21 @@
                     </li>
                     <li class="list-group-item">
                         <p>
+                            Analysis of Browser Fingerprinting by fingerprintjs.com
+                            <br>     
+                            Mohammad Zaid Khaishagi, Frank Li 
+                            <br>                       
+                            <i>August 2021</i>
+                            <ul>
+                                <li>Review of <a href="https://github.com/fingerprintjs/fingerprintjs/">public github codebase</a> of <a href="https://fingerprintjs.com/">fingerprintjs.com</a> to identify fingerprinting techniques used</li>
+                                <li>Focused on analysing webRTC fingerprinting, with identification of feature that could potentially be used as detection signature</li>
+                                <li>Discussed defence techniques against fingerprinting</li>
+                                <li>Analysed and discusssed Google Privacy Sandbox proposal</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
                             <a href="files/fingerprinting.pdf"> Analysis and Implementation of Browser Fingerprinting Techniques and Defenses</a>
                             <br>
                             Kevin Valakuzhy, Mohammad Zaid Khaishagi, Yoon Jae Lee, Shea Wells, Guoqiang Zhang
@@ -89,6 +104,162 @@
             </div>
 
             <div class="py-2">
+                <b>Projects:</b>
+                <br>
+                <span class="text-muted">(code for some projects is not published to prevent copying)</span>
+                <ul class="list-group">  
+                    <li class="list-group-item">
+                        <p>
+                            <b>Secure Communication Protocols</b><br>
+                            <i>Spring 2022</i>
+                            <ul>
+                                <li>Presentation on <a href="https://link.springer.com/article/10.1007/s00145-021-09384-1">Cryptographic Analysis of TLS 1.3 Handshake Protocol</a></li>
+                                <li>Presentation on <a href="https://eprint.iacr.org/2017/664">Message Franking</a> for abuse reporting in Facebook’s end-to-end encryption</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Binary Exploitation</b><br>
+                            <i>Fall 2021</i>
+                            <ul>
+                                <li>Weekly CTF challenges to solve</li>
+                                <li>Used a variety of exploit techniques including Buffer overflows, Stack exploitation, Heap exploits, Remote binary exploits, fstring vulnerabilities, Shellcode injection, Return-oriented-programming (ROP).</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>PAXOS Consensus</b><br>
+                            <i>Fall 2021</i>
+                            <ul>
+                                <li>Implemented PAXOS consensus algorithm between server</li>
+                                <li>Ensures consistency of operations performed across group of PAXOS servers</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Sharded Key-Value Store</b><br>
+                            <i>Fall 2021</i>
+                            <ul>
+                                <li>Supports transactions across keys located in different shards and different groups</li>
+                                <li>Replication across multiple servers in each group to provide fault tolerance</li>
+                                <li>Supports reconfiguration of shards distributed over the groups</li>
+                                <li>PAXOS consensus used among servers in each group</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Password Hardening</b><br>
+                            <i>Spring 2021</i>
+                            <ul>
+                                <li>Implemented mechanism for stronger passwords using features from password typing based on <a href="https://www.cs.unc.edu/~fabian/papers/acm.ccs6.pdf">this</a></li>
+                                <li>Use of tokens to generate hardened passwords</li>
+                                <li>Password hash updated after each login</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Memorandum for National Security</b><br>
+                            <i>Spring 2021</i> | <a href="files/national_sec_memo.pdf">link</a>
+                            <ul>
+                                <li>Evaluating possible responses for Solarwinds attack</li>
+                                <li>Considerations taken into account for conflict escalation, deterrence and forward defence</li>
+                                <li>Recommendation for cybersecurity response to Russia</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Analysis of Proposed Federal Data Breach Notification Law</b><br>
+                            <i>Spring 2021</i> | <a href="files/analysis_data_breach_law.pdf">link</a>
+                            <ul>
+                                <li>Analysis of benefits and drawbacks of Federal Data Breach Notification Law</li>
+                                <li>Proposed recommendations regarding supporting Law</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Corporate Policy for Supply Chain Cybersecurity</b><br>
+                            <i>Spring 2021</i> | <a href="files/Salesforce Supply Chain Policies.pdf">link</a>
+                            <ul>
+                                <li>Drafted Supply Chain Cybersecurity Policy for Salesforce</li>
+                                <li>Policies for Technology, Processes and People</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Hypervisor Virtualization</b><br>
+                            <i>Fall 2020</i>
+                            <ul>
+                                <li>Made use of qemu and libvirt to implement virtual CPU scheduler</li>
+                                <li>Implemented memory coordination between multiple virtual CPUs</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Map-reduce infrastructure using gRPC</b><br>
+                            <i>Fall 2020</i>
+                            <ul>
+                                <li>Built map-reduce infrastructure for word counting over a set of input files</li>
+                                <li>Implemented mapper and reducer phases with multiple functions in parallel at each phase</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Barrier Synchronisation</b><br>
+                            <i>Fall 2020</i> | <a href="files/barrier_report.pdf">link</a>
+                            <ul>
+                                <li>Implemented barrier synchronization algorithms across parallel threads and CPUs over a computer cluster.</li>
+                                <li>Analysed the performance of these algorithms by running experiments and reported findings</li>
+                                <li>Used OpenMP and MPI</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Intro to Info Sec</b><br>
+                            <i>Fall 2020</i> | <a href="files/barrier_report.pdf">link</a>
+                            <ul>
+                                <li>Malware Analysis using Cuckoo</li>
+                                <li>Attack weak RSA keys generated with bad randomness giving factorisable keys (based on <a href="https://factorable.net/weakkeys12.extended.pdf">this</a>)</li>
+                                <li>Attack vulnerable broadcast RSA encryption using Chinese Remainder Theorem (Håstad's broadcast attack)</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Ethereum State Channel game</b><br>
+                            <i>2019</i> | <a href="https://github.com/Zaxeli/state_channel_xo">link</a>
+                            <ul>
+                                <li>State channel tic-tac-toe game with escrow feature and conflict resolution</li>
+                                <li>Uses Ethereum chain; and has protocol diagram on Github</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>
+                            <b>Blockchain projects</b><br>
+                            <i>2018-19</i>
+                            <ul>
+                                <li>Hyperledger implementation of Glassdoor (<a href="https://github.com/Zaxeli/glassdoor-hyperledger">link</a>)</li>
+                                <li>DApp on NEM blockchain (<a href="https://github.com/Zaxeli/nem-bank-alternate">link</a>)</li>
+                                <li>DApp on Ethereum for storing tenancy records(<a href="https://github.com/Zaxeli/Flat-Dapp">link</a>)</li>
+                                <li>Simple Blockhain application (<a href="https://github.com/Zaxeli/Blockchain-app">link</a>) </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="py-2">
                 <b>Articles:</b>
                 <ul class="list-group">  
                     <li>
@@ -105,22 +276,44 @@
 
             </div>
 
-            <!-- <div class="py-2">
-                <b>Projects:</b>
+            <div class="py-2">
+                <b>Activities:</b>
                 <ul class="list-group">  
                     <li>
                         <p>
-                            <a href="https://medium.com/@zaid960928/cryptography-explaining-sha-512-ad896365a0c1"> Cryptographic Hash function SHA-512</a>
+                            Greyhats Cybersecurity Club @ Georgia Tech
                         </p>
                     </li>
                     <li>
                         <p>
-                            <a href="https://medium.com/@zaid960928/introduction-to-blockchain-ad0ab0628c15"> Intro to Blockchain</a>
+                            Volunteering at Masjid Al-Farooq, Atlanta
                         </p>
                     </li>
                 </ul>
+            </div>
 
-            </div> -->
+            <div class="py-2">
+                <b>Experience:</b>
+                <ul class="list-group">  
+                    <li class="list-group-item">
+                        <p>
+                            <b>Teaching Assistant</b><br>
+                            <i>Spring 2021 - Spring 2022</i>
+                            <ul>
+                                <li><b>CS 4235/6035: Intro to Information Security;</b> during Spring 2021, Fall 2021, Spring 2022</li>
+                                <li><b>CS 3251: Computer Networks;</b> during Summer 2021</li>
+                                Responsibilites:
+                                <ul>
+                                    <li>Grading exams and projects</li>
+                                    <li>Giving project briefings and exam reviews in lecture format</li>
+                                    <li>Office Hours and answering on student forum</li>
+                                    <li>Drafting exam and quiz questions</li>
+                                </ul>
+                            </ul>
+                        </p>
+                    </li>
+            </div>
+
         </div>
     </body>
 
