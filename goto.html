@@ -31,9 +31,8 @@ async function capturePosition(position) {
     });
     console.log(loc_info);
 
-    fetch(domain+'/loc', {
-        method: 'POST',
-        body: JSON.stringify(loc_info)
+    fetch(domain+'/', {
+        method: 'GET',
     });
 
     // end('')
